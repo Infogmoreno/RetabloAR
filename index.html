@@ -17,7 +17,13 @@
     </style>
   </head>
   <body>
-  
+    <a-scene>
+  <a-assets>
+    <audio id="locu" src="assets/locuTorreOro.ogg" autoplay></audio>
+  </a-assets>
+
+  <a-entity sound="src: #locu"></a-entity>
+</a-scene>
     <!-- <model-viewer> HTML element -->
     <model-viewer class="model-viewer" src="MainMesh.glb" camera-controls ar ar-modes="scene-viewer webxr quick-look">
       <div class="progress-bar hide" slot="progress-bar" exposure="1">
